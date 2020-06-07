@@ -1,0 +1,14 @@
+{
+  "name": "submission2",
+  "version": "1.0.0",
+  "description": "Submission 2",
+  "main": "push.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "web-push": "^3.4.4"
+  }
+}
