@@ -58,8 +58,23 @@ function urlBase64ToUint8Array(base64String) {
     return outputArray;
 }
 
+const pushNotification = msg => {
+    const title = 'EPL News';
+    const options = {
+        body: msg,
+        image: '/assets/images/logo.gif'
+    };
+    if (Notification.permission === 'granted') {
+        navigator.serviceWorker.ready.then(regis => {
+            regis.showNotification(title, options);
+        });
+    } else {
+        console.error('Fitur notifikasi tidak diijinkan.');
+    }
+}
 
-export { registerServiceWorker, requestPermission };
+
+export { registerServiceWorker, requestPermission , pushNotification};
 
 
 

@@ -1,3 +1,5 @@
+import {pushNotification} from "./main.js";
+
 const idbPromised = idb.open('epl-db', 1, upgradedDb => {
     if (!upgradedDb.objectStoreNames.contains('teams')) {
         const teamsObjectStore = upgradedDb.createObjectStore("teams", { keyPath: "id"});
@@ -15,7 +17,8 @@ const dbInsertTeam = team => {
         }).then(transaction => {
             if (transaction.complete) {
                 resolve(true)
-                M.toast({ html: `<i class="material-icons">check_circle</i> You has been like ${team.name} and you can see on Favorite menu `});
+                M.toast({ html: `<i class="material-icons">check_circle</i> You has liked ${team.name} and you can see on Favorite menu `});
+                pushNotification(`Success, You has liked ${team.name}`)
             } else {
                 reject(new Error(transaction.onerror))
             }
@@ -63,7 +66,8 @@ const dbDeleteTeam = team => {
         }).then(transaction => {
             if (transaction.complete) {
                 resolve(true)
-                M.toast({ html: `<i class="material-icons">check_circle</i> Club ${team.name} has been delete from list favourite` });
+                M.toast({ html: `<i class="material-icons">check_circle</i>Club ${team.name} has been delete from list favourite` });
+                pushNotification(`Success, You has delete ${team.name} from list favourite`)
             } else {
                 reject(new Error(transaction.onerror))
             }
