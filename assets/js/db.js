@@ -17,8 +17,8 @@ const dbInsertTeam = team => {
         }).then(transaction => {
             if (transaction.complete) {
                 resolve(true)
-                M.toast({ html: `<i class="material-icons">check_circle</i> You has liked ${team.name} and you can see on Favorite menu `});
-                pushNotification(`Success, You has liked ${team.name}`)
+                M.toast({ html: `<i class="material-icons">check_circle</i> You like ${team.name} and you can see on Favorite menu `});
+                pushNotification(`You liked ${team.name}`)
             } else {
                 reject(new Error(transaction.onerror))
             }
@@ -67,7 +67,7 @@ const dbDeleteTeam = team => {
             if (transaction.complete) {
                 resolve(true)
                 M.toast({ html: `<i class="material-icons">check_circle</i>Club ${team.name} has been delete from list favourite` });
-                pushNotification(`Success, You has delete ${team.name} from list favourite`)
+                pushNotification(`You has delete ${team.name} from list favourite`)
             } else {
                 reject(new Error(transaction.onerror))
             }

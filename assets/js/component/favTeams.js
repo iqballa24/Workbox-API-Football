@@ -58,7 +58,7 @@ function showLikedTeamById(data){
                         <div class="divider"></div>
                         <h6 class="center-align">Email : ${data.email}</h6>
                         <div class="divider"></div>
-                        <h6 class="center-align">Website : ${data.website}</h6>
+                        <h6 class="center-align">Website : <a href =" ${data.website}">${data.website}</a></h6>
                     </div>
                 </div>
                 </div>

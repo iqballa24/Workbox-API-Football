@@ -11,7 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
             const confirma = confirm("Delete?");
             if(confirma == true){
                 dbDeleteTeam(teamId)
-                window.location.href = "index.html#favourite";
+                setTimeout(() => {
+                    window.location.href = "index.html#favourite";
+                }, 1000);
             }
         })
     })

@@ -136,6 +136,7 @@ function getTeamById() {
 function getLikedTeams() {
     dbGetAllTeam().then(data => {
         showLikedTeams(data);
+        
     });
 }
 

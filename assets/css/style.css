@@ -1,0 +1,36 @@
+*{
+	box-sizing: border-box;
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+main {
+    flex: 1 0 auto;
+}
+
+h3{
+    font-style: italic;
+    font-size: 35px;
+}
+
+nav a span {
+    font-weight: bold;
+}
+
+
+/* ukuran tablet */
+@media screen and (max-width: 768px){
+    h3{
+        font-size: 30px;
+    }
+}
+
+/* Ukuran mobile */
+@media screen and (max-width: 576px){
+    h3{
+        font-size: 25px;
+    }
+}
