@@ -1,7 +1,7 @@
-import showStanding from "./component/standing.js";
-import { showTeams, showTeamById } from "./component/teams.js";
-import showTopScorer from "./component/topScorer.js";
-import {showLikedTeams, showLikedTeamById} from "./component/favTeams.js";
+import showStanding from "../component/standing.js";
+import { showTeams, showTeamById } from "../component/teams.js";
+import showTopScorer from "../component/topScorer.js";
+import {showLikedTeams, showLikedTeamById} from "../component/favTeams.js";
 import { dbGetAllTeam, getById} from "./db.js";
 
 const API_KEY = "2cd82346638f4e5f862d32b634eb1449";

@@ -1,4 +1,5 @@
-import {pushNotification} from "./main.js";
+import {pushNotification} from "../view/main.js";
+import "./idb.js";
 
 const idbPromised = idb.open('epl-db', 1, upgradedDb => {
     if (!upgradedDb.objectStoreNames.contains('teams')) {

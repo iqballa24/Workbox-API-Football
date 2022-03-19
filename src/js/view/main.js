@@ -62,7 +62,7 @@ const pushNotification = msg => {
     const title = 'EPL News';
     const options = {
         body: msg,
-        image: '/assets/images/logo.gif'
+        image: '/src/images/logo.gif'
     };
     if (Notification.permission === 'granted') {
         navigator.serviceWorker.ready.then(regis => {

@@ -1,10 +1,10 @@
-import { loadNav, loadPage } from "./nav.js";
-import { registerServiceWorker, requestPermission } from "./main.js";
+import { loadNav, loadPage } from "./view/nav.js";
+import { registerServiceWorker, requestPermission } from "./view/main.js";
 
 document.addEventListener("DOMContentLoaded", function () {
     // Activate sidebar nav
     const elems = document.querySelectorAll(".sidenav");
-    M.Sidenav.init(elems);
+    M.Sidenav.init(elems); 
     loadNav();
 
     // Load pages content

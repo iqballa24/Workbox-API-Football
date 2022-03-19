@@ -1,5 +1,5 @@
-import { getTeamById ,getLikedTeamById } from "./api.js";
-import {dbDeleteTeam} from "./db.js";
+import { getTeamById ,getLikedTeamById } from "./data/api.js";
+import {dbDeleteTeam} from "./data/db.js";
 
 document.addEventListener("DOMContentLoaded", () => {
 

@@ -1,4 +1,4 @@
-import { getAllStandings, getAllTeams, getTopScorer, getLikedTeams} from "../js/api.js";
+import { getAllStandings, getAllTeams, getTopScorer, getLikedTeams} from "../data/api.js";
 
 let page = window.location.hash.substr(1);
 if (page === "") page = "home";
