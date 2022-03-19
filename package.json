@@ -9,7 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "materialize-css": "^1.0.0-rc.2",
     "web-push": "^3.4.4"
   }
 }
