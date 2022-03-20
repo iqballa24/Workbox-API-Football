@@ -1,3 +1,7 @@
+// component
+import "./component/navbar-detail.js";
+import "./component/bottom-bar.js";
+
 import { getTeamById ,getLikedTeamById } from "./data/api.js";
 import {dbDeleteTeam} from "./data/db.js";
 

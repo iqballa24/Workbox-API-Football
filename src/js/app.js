@@ -1,5 +1,10 @@
+// component
+import "./component/bottom-bar.js";
+import "./component/navbar.js";
+
 import { loadNav, loadPage } from "./view/nav.js";
 import { registerServiceWorker, requestPermission } from "./view/main.js";
+
 
 document.addEventListener("DOMContentLoaded", function () {
     // Activate sidebar nav
