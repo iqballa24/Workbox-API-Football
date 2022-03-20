@@ -2,6 +2,7 @@
 import "./component/navbar-detail.js";
 import "./component/bottom-bar.js";
 import "./component/preloader.js";
+import "./component/btnLike.js";
 
 import {getTeamById, getLikedTeamById} from "./data/api.js";
 import { dbInsertTeam } from "./data/db.js";

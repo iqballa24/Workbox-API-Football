@@ -1,33 +1,20 @@
-function showTopScorer(data) {
-    let topScorerHTML = "";
-    const topScorerElement = document.getElementById("topScorer")
-
-    data.scorers.forEach(data => {
-        topScorerHTML += `
-            <tr>
-                <td>${data.player.name}</td>
-                <td>${data.team.name}</td>
-                <td>${data.numberOfGoals}</td>
-            </tr>
-             `;
-    });
-    document.getElementById('progress').style.display = 'none'
-    topScorerElement.innerHTML = `
-            <div class="card">
-            <table class="striped centered responsive-table">
-                <thead  class="purple darken-4 white-text">
-                    <tr>
-                        <th>Player</th>
-                        <th>Team Name</th>
-                        <th>Goals</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    ${topScorerHTML}
-                </tbody>
-            </table>
+class TopScorer extends HTMLElement{
+    connectedCallback(){
+        this.render();
+    }
+    
+    render(){
+        this.innerHTML = `
+            <div class="container">
+            <div class="section">
+                <h3 class="header center grey-text">Top Scorer</h3>
+                <div class="divider"></div>
+                <pre-loader id="progress"></pre-loader>
+                <div class="row" id="topScorer" style="margin-top: 30px;"></div>
             </div>
-            `
+        </div>
+        `;
+    }
 }
 
-export default showTopScorer;
+customElements.define("topscorer-item", TopScorer);
