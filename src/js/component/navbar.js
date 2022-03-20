@@ -8,7 +8,7 @@ class Navbar extends HTMLElement{
             <nav class="purple darken-4" role="navigation">
                 <div class="nav-wrapper container">
                     <a href="#" class="brand-logo" id="logo-container">
-                        <img class="responsive-img hide-on-med-and-down" width="40" src="src/images/EPL.png">
+                        <img class="responsive-img hide-on-med-and-down" width="40" src="src/images/EPL.png" alt="Logo EPL">
                         EPL<span> News</span>
                     </a>
                     <a href="#" class="sidenav-trigger" data-target="nav-mobile">
