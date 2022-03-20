@@ -11,7 +11,7 @@
 - [x] Workbox
 
 ## Deploy
-* [github](https://iqballa24.github.io)
+* [github](https://iqballa24.github.io/Workbox-API-Football/)
 * [firebase](https://epl-news-4a383.web.app/)
 
 ## Screenshot
