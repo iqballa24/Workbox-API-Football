@@ -1,7 +1,7 @@
 // Register service worker
 function registerServiceWorker(){
     navigator.serviceWorker
-        .register("/Workbox-API-Football/sw.js")
+        .register("/sw.js")
         .then(registration => {
             console.log(
                 "ServiceWorker: Pendaftaran berhasil. Scope:",
