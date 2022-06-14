@@ -38,7 +38,7 @@ if (workbox){
     ]);
 
     workbox.routing.registerRoute(
-        new RegExp('https://api.football-data.org/v2/'),
+        'https://api.football-data.org/v2/',
         workbox.strategies.staleWhileRevalidate()
     );
 

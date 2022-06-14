@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
     btnLike.addEventListener("click", () => {
         item.then(team => {
             dbInsertTeam(team);
-            console.log(team.id)
         })
     })
     
